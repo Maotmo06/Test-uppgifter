@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <button id="myButton">Click Me</button>
+        <p id="list">0</p>
+
+    <script>
+    const listElement = document.getElementById('list');
+    const button = document.getElementById('myButton');
+    document.body.style.backgroundColor = 'lightblue';
+    let array = [0,];
+    let i = 0
+
+    button.addEventListener('click', function() {
+        i = i + 1
+        array.push(i); // Adds 4 to the end
+console.log(array); // Output: [1, 2, 3, 4]
+listElement.textContent = array.join(', ');
+      });
+</script>
+</body>
+</html>
